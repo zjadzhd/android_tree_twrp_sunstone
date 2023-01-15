@@ -15,6 +15,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
+rn=`basename $0`
+path=$(echo $0|sed 's/$rn//g')
+if [ -f $path/ ];then
+fi
 add_lunch_combo omni_sunstone-userdebug
 add_lunch_combo omni_sunstone-eng
